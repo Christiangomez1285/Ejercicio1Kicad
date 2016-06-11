@@ -1,0 +1,4 @@
+Bajarse el libro de git
+Instalar git bash/ git cola 
+Abrirse una cuenta en github
+ 

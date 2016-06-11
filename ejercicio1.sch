@@ -1,0 +1,136 @@
+EESchema Schematic File Version 2
+LIBS:Power_Management
+LIBS:device
+LIBS:conn
+LIBS:power
+LIBS:ejercicio1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Circuito inicial"
+Date "2016-04-16"
+Rev ".01"
+Comp "UNLAM"
+Comment1 "Gomez"
+Comment2 "Cunurana"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R1
+U 1 1 57127178
+P 6550 3750
+F 0 "R1" V 6630 3750 50  0000 C CNN
+F 1 "100K" V 6550 3750 50  0000 C CNN
+F 2 "footprints_ej1:R3-LARGE_PADS" V 6480 3750 50  0001 C CNN
+F 3 "" H 6550 3750 50  0000 C CNN
+	1    6550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 K1
+U 1 1 57127235
+P 3650 3500
+F 0 "K1" H 3650 3700 50  0000 C CNN
+F 1 "CONN_01X03" V 3750 3500 50  0000 C CNN
+F 2 "footprints_ej1:bornier3" H 3650 3500 50  0001 C CNN
+F 3 "" H 3650 3500 50  0000 C CNN
+	1    3650 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 57127484
+P 5500 2900
+F 0 "D1" H 5500 2800 50  0000 C CNN
+F 1 "LED ROJO" H 5500 3050 50  0000 C CNN
+F 2 "footprints_ej1:LED-3MM" H 5500 2900 50  0001 C CNN
+F 3 "" H 5500 2900 50  0000 C CNN
+	1    5500 2900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 57127E94
+P 5550 3350
+F 0 "C1" H 5400 3250 50  0000 L CNN
+F 1 "100 nF" H 5250 3500 50  0000 L CNN
+F 2 "footprints_ej1:C_Rect_L7_W3.5_P5" H 5588 3200 50  0001 C CNN
+F 3 "" H 5550 3350 50  0000 C CNN
+	1    5550 3350
+	0    1    -1   0   
+$EndComp
+$Comp
+L D D2
+U 1 1 57128220
+P 5750 4400
+F 0 "D2" H 5750 4250 50  0000 C CNN
+F 1 "1N4148" H 5750 4500 50  0000 C CNN
+F 2 "footprints_ej1:Diode_DO-35_SOD27_Horizontal_RM10" H 5750 4400 50  0001 C CNN
+F 3 "" H 5750 4400 50  0000 C CNN
+	1    5750 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3350 6950 3350
+Wire Wire Line
+	6550 3350 6550 3600
+Wire Wire Line
+	5900 4400 6950 4400
+Wire Wire Line
+	6550 3900 6550 4400
+Wire Wire Line
+	5600 4400 4150 4400
+Wire Wire Line
+	4150 4400 4150 3600
+Wire Wire Line
+	4150 3600 3850 3600
+Wire Wire Line
+	4800 3400 3850 3400
+Wire Wire Line
+	5400 3350 4800 3350
+Wire Wire Line
+	4800 2900 4800 3400
+Connection ~ 4800 3350
+Wire Wire Line
+	4800 2900 5300 2900
+Wire Wire Line
+	5700 2900 6050 2900
+Wire Wire Line
+	6050 2900 6050 3350
+Connection ~ 6050 3350
+Text Notes 7300 3250 0    60   ~ 0
+Resistor\n en serie
+Text Notes 5000 2650 0    60   ~ 0
+CIRCUITO EXPERIMENTAL
+Wire Notes Line
+	6650 3600 6850 3200
+Wire Notes Line
+	6850 3200 7250 3200
+NoConn ~ 3850 3500
+$Comp
+L R R2
+U 1 1 57254155
+P 6950 3750
+F 0 "R2" V 7030 3750 50  0000 C CNN
+F 1 "100K" V 6950 3750 50  0000 C CNN
+F 2 "footprints_ej1:R3-LARGE_PADS" V 6880 3750 50  0001 C CNN
+F 3 "" H 6950 3750 50  0000 C CNN
+	1    6950 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3350 6950 3600
+Connection ~ 6550 3350
+Wire Wire Line
+	6950 4400 6950 3900
+Connection ~ 6550 4400
+Wire Notes Line
+	7050 3600 7100 3450
+Wire Notes Line
+	7100 3450 7350 3450
+Text Notes 7450 3500 0    60   ~ 0
+Resistor\n agregado
+$EndSCHEMATC
